@@ -27,8 +27,9 @@ OpenJDK Runtime Environment (build 1.8.0_382-8u382-ga-1~22.04.1-b05)
 OpenJDK 64-Bit Server VM (build 25.382-b05, mixed mode)
 </pre>
 <h3>Zookeeper and Kafka Installation</h3>
-Kafka Installation, go to https://kafka.apache.org/downloads
-![image](https://github.com/jsusanto/java-client-apache-kafka/assets/1523220/494b2086-724d-4503-b0df-7a850a235af9)
+Kafka Installation, go to https://kafka.apache.org/downloads <br/>
+![90331eb3-7b15-479f-9a98-5d87e42aa01b](https://github.com/jsusanto/java-client-apache-kafka/assets/1523220/19f1141f-63fa-4f68-840f-c1d3bb87ff75)
+
 We're using Binary Version (kafka_2.12-3.5.1.tgz), This java client should be compatible with any kafka version.
 
 <pre>
@@ -106,7 +107,7 @@ scroll to the log.dirs and change it to your new Kafka directory
 <pre>
   log.dirs=/home/ubuntu/kafka_2.12-3.5.1/data/kafka
 </pre>
-![image](https://github.com/jsusanto/java-client-apache-kafka/assets/1523220/10da02b7-30c7-4881-88b1-e8bf76cb7969)
+![image](https://github.com/jsusanto/java-client-apache-kafka/assets/1523220/10da02b7-30c7-4881-88b1-e8bf76cb7969) <br/>
 We'll edit the kafka-server-start.sh file found in the Kafka bin/ directory.
 <pre>
   ubuntu@ip-172-31-1-82:~/kafka_2.12-3.5.1$ vi bin/kafka-server-start.sh
@@ -127,4 +128,5 @@ fi
   ubuntu@ip-172-31-1-82:~/kafka_2.12-3.5.1$ kafka-server-start.sh config/server.properties
 </pre>
 ![image](https://github.com/jsusanto/java-client-apache-kafka/assets/1523220/a7a4b327-0ff0-42a7-8d40-8cc7dea6a41f)
+<br/>
 Both Zookeeper and Kafka are running.
