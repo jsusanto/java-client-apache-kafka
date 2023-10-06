@@ -130,3 +130,15 @@ fi
 ![image](https://github.com/jsusanto/java-client-apache-kafka/assets/1523220/a7a4b327-0ff0-42a7-8d40-8cc7dea6a41f)
 <br/>
 Both Zookeeper and Kafka are running.
+<h1>Common issue when connecting to AWS</h1>
+You might not be able to connect from Java client due to the following config in the server.properties <br/>
+<pre>
+  # Listener name, hostname and port the broker will advertise to clients.
+  # If not set, it uses the value for "listeners".
+  #advertised.listeners=PLAINTEXT://your.host.name:9092
+  advertised.listeners=PLAINTEXT://54.206.54.16:9092
+</pre>
+<br/>
+IP Address is your public server IP Address and don't forget to check in the Security Group (AWS) that you open the port.
+<br/>
+![image](https://github.com/jsusanto/java-client-apache-kafka/assets/1523220/95fa709d-26c1-46f2-b065-6e5afb01262d)
