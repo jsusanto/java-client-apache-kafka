@@ -24,6 +24,7 @@ public class ProducerDemo {
     public static void main(String[] args) {
         log.info("I am a Kafka Producer");
 
+        //As per Public IP Address of Kafka Server
         String bootstrapServers = "13.238.116.115:9092";
 
         // create Producer properties
