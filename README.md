@@ -142,3 +142,14 @@ You might not be able to connect from Java client due to the following config in
 IP Address is your public server IP Address and don't forget to check in the Security Group (AWS) that you open the port.
 <br/>
 ![image](https://github.com/jsusanto/java-client-apache-kafka/assets/1523220/95fa709d-26c1-46f2-b065-6e5afb01262d)
+<h1>Running Java Client and kafka-console-consumer.sh</h1>
+<h3>Run your Java Kafka Producer application</h3>
+<pre>
+  kafka-topics.sh --bootstrap-server localhost:9092 --topic demo_java --create --partitions 3 --replication-factor 1
+</pre>
+<br/>
+To observe the output of our Java producer application, open the Kafka consumer CLI, kafka-console-consumer using the command:
+<pre>
+  ubuntu@ip-172-31-1-82:~$ kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic demo_java
+</pre>
+![image](https://github.com/jsusanto/java-client-apache-kafka/assets/1523220/4e3b7961-9c33-4a82-8b46-6a6f120b6955)
