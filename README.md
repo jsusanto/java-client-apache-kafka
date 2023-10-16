@@ -1,5 +1,22 @@
 # java-client-apache-kafka
 Java Client Application (Producer, Consumer) and Setting up Apache Kafka Linux Ubuntu
+
+# Kafka Explanation
+Inside each Kafka cluster, there are several key components:
+- Brokers that are responsible for storing and serving the data.
+- Inside brokers, there are topics to feed names to which records are written.
+- Records are the objects that represent our message (key value pairs)
+
+- Partition is a subset of the topic data and is stored on a single broker.
+- A topic can have multiple partitions to allow for parallel processing of the data.
+- Outside the broker, we have the application that communicates to the broker.
+  These applications are producers that write data to Kafka topics and consumers.
+
+  Apache Kafka's Main components:
+  - Topics: categories to which messages are published by producers and consumed by consumers.
+  - Producers
+  - Consumers
+
 # Description
 1. Setting up Apache Kafka Server on Amazon AWS Linux Ubuntu Free-Tier.
 Reference: https://www.linkedin.com/pulse/kafka-aws-free-tier-steven-aranibar/
